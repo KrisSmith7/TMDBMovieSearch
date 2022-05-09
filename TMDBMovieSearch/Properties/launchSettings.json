@@ -24,5 +24,6 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
-  }
+  },
+  "TmdbAPI": "https://api.themoviedb.org/3/search/movie?api_key=7c43300088957ad0d9d525c14b76cf01&language=en-US&query="
 }

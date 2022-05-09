@@ -1,15 +1,16 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddHttpClient();
-
-
-    //var host = WebAssemblyHostBuilder.CreateDefault(args);
-    //host.Services.AddSingleton<IHttpClientFactory>();
-
+    builder.Services.AddHttpClient("tmdb", config =>
+    {
+        config.BaseAddress = new Uri("https://api.themoviedb.org/3/search/movie?");
+    });
+    //builder.Services.AddSingleton<SearchResults>();
 
 var app = builder.Build();
 
@@ -29,8 +30,5 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
-ServiceCollection services = new ServiceCollection();
-services.AddHttpClient();
 
 app.Run();

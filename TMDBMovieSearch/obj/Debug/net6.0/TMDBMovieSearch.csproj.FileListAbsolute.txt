@@ -24,3 +24,17 @@ C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\obj\Debug\net6.0\ref
 C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\obj\Debug\net6.0\TMDBMovieSearch.pdb
 C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\obj\Debug\net6.0\TMDBMovieSearch.genruntimeconfig.cache
 C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\obj\Debug\net6.0\ref\TMDBMovieSearch.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\obj\Debug\net6.0\TMDBMovieSearch.csproj.CopyComplete
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch\bin\Debug\net6.0\System.IO.Pipelines.dll

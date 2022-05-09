@@ -1,7 +1,15 @@
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddHttpClient();
+
+
+    //var host = WebAssemblyHostBuilder.CreateDefault(args);
+    //host.Services.AddSingleton<IHttpClientFactory>();
+
 
 var app = builder.Build();
 

@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\krist\source\repos\TMDBMovieSearch\TMDBMovieSearch
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/krist/source/repos/TMDBMovieSearch/TMDBMovieSearch/Pages/MovieData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW92aWVEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/krist/source/repos/TMDBMovieSearch/TMDBMovieSearch/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

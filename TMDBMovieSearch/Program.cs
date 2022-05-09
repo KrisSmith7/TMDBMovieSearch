@@ -22,4 +22,7 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+ServiceCollection services = new ServiceCollection();
+services.AddHttpClient();
+
 app.Run();

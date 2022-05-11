@@ -1,5 +1,107 @@
-﻿<h3>MovieData</h3>
+﻿@using TMDBMovieSearch.Models
+@using System.Net.Http.Json
+@inject IHttpClientFactory _clientFactory
+
+
+
+
+
+
+
+<div class="my-4 mx-auto">
+<input id="searchText" name="queryText" value="" type="text"/>
+<button>Submit</button>
+</div>
+
+
+
+
+@if (string.IsNullOrWhiteSpace(errorString) == false)
+{
+    <div class="h2">@errorString</div>
+}
+else if (results is null)
+{
+    <div class="h4">Loading...</div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th></th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Release Date</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in results.Results)
+            {
+                var posterImg = $"https://image.tmdb.org/t/p/original{@item.poster_path}";
+            <tr>
+                    <td><img class="img-thumbnail" src=@posterImg/></td>
+                    <td>@item.title</td>
+                    <td>@item.overview</td>
+                    <td>@item.release_date</td>
+            </tr>
+            }
+        </tbody>
+        </table>
+
+    @if ((@results.total_results == 0) == true)
+    {
+        <p>Sorry, We couldn't find anything matching that title. Try again?</p>
+    }
+    else
+    {
+    <p>Total # of Results: @results.total_results </p>
+    <p>Page 1 of @results.Total_Pages</p>
+    <button>Back</button>
+    <button onclick="@OnNext()">Next</button>
+    }
+
+
+}
+
 
 @code {
+    SearchResults results;
+    string errorString;
+    string pageNum;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var client = _clientFactory.CreateClient();
+        string searchText = "avengers";
+        try
+        {
+            results = await client.GetFromJsonAsync<SearchResults>($"https://api.themoviedb.org/3/search/movie?api_key=7c43300088957ad0d9d525c14b76cf01&language=en-US&query={searchText}&include_adult=false");
+            errorString = null;
+        }
+        catch (Exception ex)
+        {
+            errorString = $"There was an error retrieving results: {ex.Message}";
+        }
+    }
+
+    private async Task OnNext()
+    {
+        var client = _clientFactory.CreateClient();
+        string searchText = "avengers";
+        string pageNum = "2";
+        try
+        {
+            results = await client.GetFromJsonAsync<SearchResults>($"https://api.themoviedb.org/3/search/movie?api_key=7c43300088957ad0d9d525c14b76cf01&language=en-US&query={searchText}&page={pageNum}include_adult=false");
+            errorString = null;
+        }
+        catch (Exception ex)
+        {
+            errorString = $"There was an error retrieving results: {ex.Message}";
+        }
+    }
+
 
 }
